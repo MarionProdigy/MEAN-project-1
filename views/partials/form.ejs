@@ -1,0 +1,28 @@
+<!-- views/partials/form.ejs -->
+
+<div id="footer">
+ <div class="footerForm">
+ <h3 style="text-shadow: 1px 1px 2px black, 0 0 25px #cbf500, 0 0 5px darkblue;">Darling, leave a message</h3>
+  <h4>You are beautiful</h4>
+ <div class="footerFormR">
+   <form method="post" action="/newmessage"> <!-- post newmessage -->
+  <p><label>Name:</label><input name="username" type="text" class="footerInputArea" /></p>
+  <p><label>Country:</label><input name="country" type="text" class="footerInputArea" /></p>
+  <p><label>Profession:</label><input name="profession" type="text" class="footerInputArea" /></p>
+ </div>
+ <div class="footerFormR">
+  <p><label>Message:</label> <textarea name="message" class="footertextarea" rows="2" cols="3"></textarea>
+  </p>
+     <input class="formi-nappi" name="" type="submit" value="SEND" onclick="show_alert()"/>
+ </div>
+ <br class="clear" />
+ </div>
+
+<br class="clear" />
+</div>
+
+<script>
+  function show_alert() {
+   alert("Thanks for the message!");
+}
+</script>

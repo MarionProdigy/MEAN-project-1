@@ -1,0 +1,25 @@
+<div>
+
+<table border="2">
+  <tr>
+    <td style="text-align:center;">NAME</td>
+    <td style="text-align:center">COUNTRY</td>
+    <td style="text-align:center">MESSAGE</td>
+    <td style="text-align:center">PROFESSION</td>
+    <td style="text-align:center">TIME STAMP</td>
+  </tr>
+
+<!-- render nicely through forEach-->
+<% json.forEach(function(json) { %>
+  <tr>
+    <td class="joku" style="text-align:center"><strong><%= json.username %></strong></td>
+    <td style="text-align:center"><%= json.country %></td>
+    <td style="text-align:center"><%= json.message %></td>
+    <td style="text-align:center"><%= json.profession %></td>
+    <td style="text-align:center"><%= json.date %></td>
+  </tr>
+    <% }); %>
+
+</table>
+
+</div>
