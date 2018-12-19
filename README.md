@@ -1,2 +1,2 @@
 # MEAN-project-1
-Guestbook application (EJS, NodeJS, JSON)
+First part of Guestbook Application for school project (EJS, NodeJS, JSON)
